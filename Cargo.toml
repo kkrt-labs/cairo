@@ -1,5 +1,5 @@
 [profile.release]
-overflow-checks = true     # Enable integer overflow checks.
+overflow-checks = true # Enable integer overflow checks.
 
 [profile.release-with-debug]
 inherits = "release"
@@ -8,46 +8,46 @@ debug = true
 [workspace]
 resolver = "2"
 members = [
-    "crates/cairo-lang-casm",
-    "crates/cairo-lang-compiler",
-    "crates/cairo-lang-debug",
-    "crates/cairo-lang-defs",
-    "crates/cairo-lang-diagnostics",
-    "crates/cairo-lang-eq-solver",
-    "crates/cairo-lang-filesystem",
-    "crates/cairo-lang-formatter",
-    "crates/cairo-lang-language-server",
-    "crates/cairo-lang-lowering",
-    "crates/cairo-lang-parser",
-    "crates/cairo-lang-plugins",
-    "crates/cairo-lang-proc-macros",
-    "crates/cairo-lang-project",
-    "crates/cairo-lang-runner",
-    "crates/cairo-lang-semantic",
-    "crates/cairo-lang-sierra",
-    "crates/cairo-lang-sierra-ap-change",
-    "crates/cairo-lang-sierra-gas",
-    "crates/cairo-lang-sierra-generator",
-    "crates/cairo-lang-sierra-to-casm",
-    "crates/cairo-lang-sierra-type-size",
-    "crates/cairo-lang-starknet",
-    "crates/cairo-lang-syntax",
-    "crates/cairo-lang-syntax-codegen",
-    "crates/cairo-lang-test-plugin",
-    "crates/cairo-lang-test-runner",
-    "crates/cairo-lang-utils",
-    "crates/bin/cairo-compile",
-    "crates/bin/cairo-format",
-    "crates/bin/cairo-language-server",
-    "crates/bin/cairo-run",
-    "crates/bin/cairo-test",
-    "crates/bin/generate-syntax",
-    "crates/bin/sierra-compile",
-    "crates/bin/starknet-compile",
-    "crates/bin/starknet-sierra-compile",
-    "crates/bin/starknet-sierra-extract-code",
-    "crates/bin/starknet-sierra-upgrade-validate",
-    "tests",
+  "crates/cairo-lang-casm",
+  "crates/cairo-lang-compiler",
+  "crates/cairo-lang-debug",
+  "crates/cairo-lang-defs",
+  "crates/cairo-lang-diagnostics",
+  "crates/cairo-lang-eq-solver",
+  "crates/cairo-lang-filesystem",
+  "crates/cairo-lang-formatter",
+  "crates/cairo-lang-language-server",
+  "crates/cairo-lang-lowering",
+  "crates/cairo-lang-parser",
+  "crates/cairo-lang-plugins",
+  "crates/cairo-lang-proc-macros",
+  "crates/cairo-lang-project",
+  "crates/cairo-lang-runner",
+  "crates/cairo-lang-semantic",
+  "crates/cairo-lang-sierra",
+  "crates/cairo-lang-sierra-ap-change",
+  "crates/cairo-lang-sierra-gas",
+  "crates/cairo-lang-sierra-generator",
+  "crates/cairo-lang-sierra-to-casm",
+  "crates/cairo-lang-sierra-type-size",
+  "crates/cairo-lang-starknet",
+  "crates/cairo-lang-syntax",
+  "crates/cairo-lang-syntax-codegen",
+  "crates/cairo-lang-test-plugin",
+  "crates/cairo-lang-test-runner",
+  "crates/cairo-lang-utils",
+  "crates/bin/cairo-compile",
+  "crates/bin/cairo-format",
+  "crates/bin/cairo-language-server",
+  "crates/bin/cairo-run",
+  "crates/bin/cairo-test",
+  "crates/bin/generate-syntax",
+  "crates/bin/sierra-compile",
+  "crates/bin/starknet-compile",
+  "crates/bin/starknet-sierra-compile",
+  "crates/bin/starknet-sierra-extract-code",
+  "crates/bin/starknet-sierra-upgrade-validate",
+  "tests",
 ]
 
 [workspace.package]
@@ -65,8 +65,8 @@ ark-secp256r1 = "0.4.0"
 ark-std = "0.4.0"
 assert_matches = "1.5"
 bimap = "0.6.3"
-cairo-felt = "0.8.2"
-cairo-vm = "0.8.2"
+cairo-felt = { git = "https://github.com/kkrt-labs/cairo-vm.git", branch = "v0.9.1" }
+cairo-vm = { git = "https://github.com/kkrt-labs/cairo-vm.git", branch = "v0.9.1" }
 clap = { version = "4.4", features = ["derive"] }
 colored = "2"
 const-fnv1a-hash = "1.1.0"
@@ -113,9 +113,9 @@ test-case-macros = "3.2.1"
 test-log = "0.2.13"
 thiserror = "1.0.50"
 time = { version = "0.3.30", features = [
-    "formatting",
-    "macros",
-    "local-offset",
+  "formatting",
+  "macros",
+  "local-offset",
 ] }
 tokio = { version = "1.33.0", features = ["full", "sync"] }
 toml = "0.8.8"
