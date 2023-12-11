@@ -8,7 +8,7 @@ use crate::generator::{get_codes, project_root};
 fn sourcegen_ast() {
     for (suffix, code) in get_codes() {
         let filename = project_root().join(suffix);
-        if fs::read_to_string(filename).unwrap() != code {
+        if fs::read_to_string(filename.clone()).unwrap() != code {
             dbg!(filename);
             dbg!(code);
             panic!("Some files are not up to date. Please run `cargo run --bin generate-syntax`");
